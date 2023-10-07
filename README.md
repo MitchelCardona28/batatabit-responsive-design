@@ -1,2 +1,2 @@
-# batatabit-responsive-landing-page
-Implementando Mobile First, la estrategia que te permite diseñar tu web pensando primero en los dispositivos móviles y luego adaptarla a las pantallas más grandes como tablets y desktops. 
+# Batatabit y Mobile First  
+Implementando Mobile First para una conocida landing page. Creando éste diseño responsivo pensamos primero en los dispositivos móviles y luego lo adaptamos a las pantallas más grandes como tablets y desktops. 
