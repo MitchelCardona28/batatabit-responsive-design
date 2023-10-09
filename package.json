@@ -1,0 +1,23 @@
+{
+  "name": "batatabit-responsive-design",
+  "version": "1.0.0",
+  "description": "\"Batatabit with responsive design\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchelCardona28/batatabit-responsive-design.git"
+  },
+  "keywords": [
+    "responsive-design",
+    "mobile-first"
+  ],
+  "author": "Mitchel Cardona <michelito428@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MitchelCardona28/batatabit-responsive-design/issues"
+  },
+  "homepage": "https://github.com/MitchelCardona28/batatabit-responsive-design#readme"
+}
