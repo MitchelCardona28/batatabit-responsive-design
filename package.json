@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/MitchelCardona28/batatabit-responsive-design/issues"
   },
-  "homepage": "https://github.com/MitchelCardona28/batatabit-responsive-design#readme"
+  "homepage": "https://github.com/MitchelCardona28/batatabit-responsive-design#readme",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }

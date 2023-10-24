@@ -21,7 +21,7 @@ html {
   font-family: "DM Sans", sans-serif ;
 }
 header {
-  width: 100vw;
+  width: 100%;
   min-width: 320px;
   height: 308px;
   background: linear-gradient(
@@ -74,7 +74,7 @@ header .header-container--title {
   margin-left: 6px;
   background-image: url(../assets/icons/mdi_keyboard_arrow_down.svg);
 }
-main {
+main, footer {
   width: 100%;
   min-width: 320px;
   height: auto;
@@ -84,24 +84,21 @@ main .main-taxes-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
-  width: 90%;
   max-width: 768px;
-  height: 538px;
+  height: auto;
+  padding: 50px 0 0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: all 1s ease;
   background-color: var(--just-white)
-}
-.main-taxes-container img {
-  margin-top: 50px;
 }
 .main-taxes-container h2 {
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
   width: 92%;
+  margin-top: 40px;
   color: var(--warm-black);
 }
 .main-taxes-container p {
@@ -111,11 +108,13 @@ main .main-taxes-container {
   line-height: 1.6;
   width: 90%;
   max-width: 420px;
+  margin-top: 24px;
   color: var(--warm-grey);
 }
 .main-stats-container {
   width: 80%;
   max-width: 300px;
+  margin: 48px 0 32px;
 }
 .main-stats-container h3 {
   font-size: 1.8rem;
@@ -155,4 +154,163 @@ main .main-taxes-container {
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--warm-grey);
+}
+main .main-features-container, .main-rates-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 64px 17px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #231e1e;
+}
+.main-features-container h2, .main-rates-container h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 24px;
+  color: var(--just-white);
+}
+.main-features-container p, .main-rates-container p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  color: #808080;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto 0;
+  height: auto;
+  gap: 16px;
+  transition: all 1s ease;
+}
+.features article {
+  min-width: 288px;
+  height: auto;
+  padding: 14px 16px 22px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--warm-black);
+}
+.features article h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6;
+  color: var(--just-white);
+}
+.features article p {
+  text-align: left;
+}
+.main-rates-container {
+  background-color: var(--just-white);
+}
+.main-rates-container h2 {
+  color: var(--warm-black);
+}
+.rates-container--slider{
+  display: flex;
+  align-items: center;
+  margin: 34px auto;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  transition: all 1s ease;
+}
+.rates-container--slider article:nth-child(2) {
+  position: relative;
+  background-color: #ffd8a8;
+}
+.rates-container--slider article:nth-child(2) .rates-card--title{
+  margin: 14px 0 0;
+}
+.rates-container--slider article:nth-child(2) .rates-card--notice {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0 0 14px;
+}
+.rates-container--slider .rates-container--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  margin: 20px;
+  padding: 25px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.rates-container--card .rates-card--title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--black);
+}
+.rates-container--card .rates-card--price {
+  font-family: "Inter", sans-serif;
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+.rates-container--card .recommended {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  width: 114px;
+  padding: 12px 0;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 91%;
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
+}
+.rates-container--card .rates-card--button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 10px;
+  background-color: var(--off-white);
+  color: var(--warm-black);
+}
+footer {
+  background-color: var(--bitcoin-orange);
+}
+footer .credits {
+  display: flex;
+  justify-content: space-around;
+  max-width: 768px;
+  padding: 64px 17px;
+  margin: 0 auto;
+}
+.credits .rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--just-white);
+}
+footer a:hover {
+  color: blue;
+}
+footer p {
+  font-size: 1.0rem;
+  font-weight: 500;
+  color: var(--just-white);
 }
